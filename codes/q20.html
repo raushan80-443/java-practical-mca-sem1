@@ -1,0 +1,22 @@
+<!--
+    Q20: Student Registration Form Using a Servlet (HTML Form)
+    Question: Process client input from an HTML registration form using a Java HttpServlet via HttpServletRequest and HttpServletResponse.
+-->
+
+<!-- File 1: student.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+</head>
+<body>
+    <h2>Student Registration Form</h2>
+    <!-- Submits form fields via POST to the @WebServlet("/StudentServlet") endpoint -->
+    <form action="StudentServlet" method="POST">
+        Name: <input type="text" name="studentName"><br><br>
+        Email: <input type="email" name="studentEmail"><br><br>
+        Course: <input type="text" name="course"><br><br>
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
